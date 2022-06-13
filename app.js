@@ -10,13 +10,11 @@ const fetchPokemon = (pokemonId) =>{
 
 function createCard(name, id){
     const newId = checkId(id);
-    console.log(newId);
 
     const pokeball = document.querySelector("#pokeball");
     pokeball.setAttribute('class','hide');
 
     const imgSrc = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/` + newId + ".png";
-    console.log(imgSrc);
 
     const card = document.createElement("div");
     const image = document.createElement("img");
